@@ -50,7 +50,7 @@ function add() {
   if (gameOver) return;
   score.textContent = Number(score.textContent) + Number(current.textContent);
   current.textContent = 0;
-  if (score.textContent >= 20) {
+  if (score.textContent >= 100) {
     //current player wins
     document.querySelector(`.player--${flag}`).classList.add('player--winner');
     gameOver = true;
